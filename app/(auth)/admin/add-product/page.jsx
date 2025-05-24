@@ -1,0 +1,41 @@
+import Progress from "../components/Progress";
+import BackButton from "@/public/icons/back.svg"
+import Link from "next/link";
+import AddProductForm from "../components/addProductForm";
+import BellIcone from "@/public/icons/bell.svg";
+import Avatar from "@/public/images/Avatars.png"
+export default function AddProductPage() {
+    return(
+        <section className="flex flex-col items-start justify-start w-full h-full p-4">
+            <div className="w-full flex items-center justify-between rounded-lg bg-white border-2
+             border-gray-200 p-3  gap-4">
+                <h1 className="text-[14px] font-bold text-[#243464]">محصول ها (افزودن محصول جدید) </h1>
+                <div className="flex items-center gap-2 ">
+                    <div className="rounded-lg p-2 bg-[#366CDA] text-white " > 
+                        <span>موجودی:</span>
+                        <span>23000</span>
+                        <span>تومان</span>
+                    </div>
+                    <button>
+                        <BellIcone className="w-[1.5rem] h-[1.5rem]" />
+                    </button>
+                    <button className="w-[2.5rem] h-[2.5rem] rounded-full overflow-hidden">
+                        <img src={Avatar.src} alt="Avatar" className="w-full h-full object-cover" />
+                    </button>    
+                </div>
+             </div>
+
+        <div className="w-full flex justify-start p-2">
+            <Link href={'#'} className="text-primary-600 hover:text-primary-800 flex items-center gap-2">
+            <BackButton className="inline-block w-[8.02] h-[15.83px]" />
+            <span className="text-[16px]">بازگشت</span>
+            </Link>
+        </div>
+        <div className="w-full m-2 p-3 ">
+            <Progress active={1} steps={[' محصول', ' اطلاعات جزیی', ' اطلاعات تکمیلی', 'عکس و فیلم']} />
+        </div>
+         <AddProductForm />
+         
+        </section>
+    )
+}
