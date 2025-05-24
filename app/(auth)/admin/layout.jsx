@@ -9,7 +9,7 @@ export default function AdminLayout({ children }) {
                 <AdminNav />
                 <AccountCart />
             </aside>
-            <main className="flex-1  p-4 rounded-lg ">
+            <main className="flex-1 p-4 rounded-lg ">
                 {children}
             </main>
         </div>
