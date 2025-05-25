@@ -56,7 +56,11 @@ export default function AddProductForm() {
                 
             </form> 
             <div className="flex justify-end p-4">
-            <Link href={"/admin/add-product/detaild-info"} className="bg-[#366CDA] text-white flex items-center justify-center
+            <Link href={"/admin/add-product/detaild-info"} 
+            className="bg-[#FFFFFF] text-[#366CDA]
+                text-[14px] border-[1.5px] border-[#366CDA] 
+                hover:bg-[#366CDA] hover:text-white transition duration-300 ease-in-out flex items-center
+                 justify-center
              rounded-md w-[8.25rem] h-[2rem]"> مرحله بعد</Link>
             </div>
 
