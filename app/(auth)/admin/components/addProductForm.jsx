@@ -56,7 +56,7 @@ export default function AddProductForm() {
                 
             </form> 
             <div className="flex justify-end p-4">
-            <Link href="#" className="bg-[#366CDA] text-white flex items-center justify-center
+            <Link href={"/admin/add-product/detaild-info"} className="bg-[#366CDA] text-white flex items-center justify-center
              rounded-md w-[8.25rem] h-[2rem]"> مرحله بعد</Link>
             </div>
 
