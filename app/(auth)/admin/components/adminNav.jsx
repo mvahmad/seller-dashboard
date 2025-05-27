@@ -26,16 +26,24 @@ export default function AdminNav (){
 
 
     return(
-            <nav className='flex flex-col space-y-4'>
+            <nav className='flex flex-col gap-[0.5rem]'>
                {
                     navItems.map((item , index)=>{
                          return(
-                             <Link key={index} href="/admin/dashboard" className="text-[#50545F]
-                               flex gap-2 items-center text-lg
-                              hover:text-white rounded-2xl hover:bg-[#2D59C8]  px-3 py-2"> 
-                                   {item.icon}
-                                   <span className="text-[14px]"> {item.name}</span>
+                              <div key={index} className="flex w-[12rem]  group items-center">
+                                   <span className="group-hover:bg-[#2D59C8] text-[#2D59C8] 
+                                    rounded-[1rem] p-[0.85rem] ">
+                                        {item.icon}
+                                   </span>
+                              
+                             <Link  href="/admin/dashboard" className="text-[#50545F]
+                               flex items-center text-lg w-full
+                              active:text-white rounded-[1rem] 
+                              group-hover:bg-[#2D59C8] group-hover:text-white 
+                              active:bg-[#2D59C8] text-[14px] p-[0.625rem]  "> 
+                                    {item.name}
                               </Link> 
+                              </div>
                          )
                     })
                }
