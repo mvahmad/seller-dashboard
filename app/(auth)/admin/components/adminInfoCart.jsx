@@ -5,7 +5,7 @@ import EditIcone from "@/public/icons/button-icon-edit.svg"
 import StarIcone from "@/public/icons/star.svg"
 export default function AdminInfoCart() {
   return (
-    <div className="flex flex-col items-center justify-center ">
+    <div className="flex flex-col w-[13.56rem] items-center justify-center ">
        <Image src={LingoMasters} alt="Lingo Masters" className="p-3" width={200} height={200} />
         <div className="bg-[#F0F6FE] rounded-2xl w-[13.5rem] h-auto flex flex-col items-center
          justify-center gap-1 my-2">

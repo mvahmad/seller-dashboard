@@ -2,8 +2,8 @@ import BellIcone from "@/public/icons/bell.svg";
 import Avatar from "@/public/images/Avatars.png"
 export default function AddProductLayout({ children }) {
     return (
-        <section className="flex flex-col items-start justify-start w-full h-full p-4">
-              <div className="w-full flex items-center justify-between rounded-lg bg-white border-2
+        <section className="flex flex-col items-start justify-start w-full h-full ">
+              <div className="w-full flex items-center justify-between rounded-lg bg-white border-1
              border-gray-200 p-3  gap-4">
                 <h1 className="text-[14px] font-bold text-[#243464]">محصول ها (افزودن محصول جدید) </h1>
                 <div className="flex items-center gap-2 ">
