@@ -30,7 +30,8 @@ export default function AdminNav (){
                {
                     navItems.map((item , index)=>{
                          return(
-                             <Link key={index} href="/admin/dashboard" className="text-[#50545F]  flex gap-2 items-center text-lg
+                             <Link key={index} href="/admin/dashboard" className="text-[#50545F]
+                               flex gap-2 items-center text-lg
                               hover:text-white rounded-2xl hover:bg-[#2D59C8]  px-3 py-2"> 
                                    {item.icon}
                                    <span className="text-[14px]"> {item.name}</span>
