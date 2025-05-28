@@ -1,6 +1,6 @@
 export default function DragAndDropInput() {
     return(
-<div className="flex items-center justify-start p-3 w-[21.5rem] h-[9.18rem] ">
+<div className="flex items-center justify-start bg-white p-3 w-[21.5rem] h-[9.18rem] ">
     <label for="dropzone-file" 
     className="flex flex-col items-center justify-center border-2 border-gray-300 
     border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 

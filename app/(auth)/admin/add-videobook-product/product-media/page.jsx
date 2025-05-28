@@ -3,11 +3,11 @@ import Progress from "@/app/(auth)/admin/components/Progress";
 import BackButton from "@/public/icons/back.svg"
 import DragAndDropInput from "../../components/drag&dropInput";
 import { AppRoutes } from "@/app/config/Routes";
-function AddAudioBookProductMedia() {
+function AddVideoBookProductMedia() {
     return ( 
-         <> 
+             <> 
          <div className="w-full flex justify-start p-2">
-            <Link href={AppRoutes.ADD_AUDIOBOOK_PRODUCT_ADDITIONAL_INFO} className="text-primary-600 hover:text-primary-800 flex items-center gap-2">
+            <Link href={AppRoutes.ADD_VIDEOBOOK_PRODUCT_ADDITIONAL_INFO} className="text-primary-600 hover:text-primary-800 flex items-center gap-2">
             <BackButton className="inline-block w-[8.02] h-[15.83px]" />
             <span className="text-[16px]">بازگشت</span>
             </Link>
@@ -41,7 +41,7 @@ function AddAudioBookProductMedia() {
 
                     <div className="flex justify-start p-3 flex-col">
                         <div className="p-3 flex gap-2">
-                            <label className="text-[#2F3237] font-bold text-[14px] ">  نمونه صدا(بخشی از کتاب صوتی)</label>
+                            <label className="text-[#2F3237] font-bold text-[14px] ">  نمونه ویدیو(بخشی از کتاب ویدیویی)</label>
                             <span className="text-[#747B8E] text-[12px]" >(حداکثر فایل500 مگابایت)</span>
                         </div>
                             <span className="text-[12px] text-[#D42620]  py-1 px-3 "> توجه:عکس پروفایل حتما باید زمینه سفید باشد <Link className="text-[#2D59C8]" href={'#'}>(لینک حذف زمینه)</Link></span>
@@ -72,4 +72,4 @@ function AddAudioBookProductMedia() {
      );
 }
 
-export default AddAudioBookProductMedia;
+export default AddVideoBookProductMedia;
