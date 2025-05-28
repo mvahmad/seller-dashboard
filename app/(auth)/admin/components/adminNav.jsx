@@ -8,20 +8,20 @@ import TakhfifIcone from "@/public/icons/takhfif.svg"
 import NazaratIcon from "@/public/icons/nazarat.svg"
 import RahnamaIcone from "@/public/icons/rahnama.svg"
 import PoshtibaniIcone from "@/public/icons/poshtibani.svg"
-
+import { AppRoutes } from "@/app/config/Routes";
 
 export default function AdminNav (){
 
      const navItems = [
-        { name: "داشبورد", icon: <ElemntIcon className="w-[20px] h-[20px]" /> },
-        { name: "محصولات", icon: <ProductsIcone className="w-[20px] h-[20px]" /> },
-        { name: "لیست سفارش ها", icon: <Order className="w-[20px] h-[20px]" /> },
-        { name: "مالی", icon: <MaliIcone className="w-[20px] h-[20px]" /> },
-        { name: "امتیاز من", icon: <EmtiyazIcone className="w-[20px] h-[20px]" /> },
-        { name: "تخفیف ها", icon: <TakhfifIcone className="w-[20px] h-[20px]" /> },
-        { name: "نظرات مشتریان", icon: <NazaratIcon className="w-[20px] h-[20px]" /> },
-        { name: "راهنما", icon: <RahnamaIcone className="w-[20px] h-[20px]" /> },
-        { name: "پشتیبانی", icon: <PoshtibaniIcone className="w-[20px] h-[20px]" /> }
+        { name: "داشبورد",href:"#", icon: <ElemntIcon className="w-[20px] h-[20px]" /> },
+        { name: "محصولات",href:AppRoutes.ADD_BOOK_PRODUCT ,icon: <ProductsIcone className="w-[20px] h-[20px]" /> },
+        { name: "لیست سفارش ها" ,href:"#", icon: <Order className="w-[20px] h-[20px]" /> },
+        { name: "مالی",href:"#", icon: <MaliIcone className="w-[20px] h-[20px]" /> },
+        { name: "امتیاز من",href:"#", icon: <EmtiyazIcone className="w-[20px] h-[20px]" /> },
+        { name: "تخفیف ها",href:"#", icon: <TakhfifIcone className="w-[20px] h-[20px]" /> },
+        { name: "نظرات مشتریان",href:"#", icon: <NazaratIcon className="w-[20px] h-[20px]" /> },
+        { name: "راهنما",href:"#", icon: <RahnamaIcone className="w-[20px] h-[20px]" /> },
+        { name: "پشتیبانی",href:"#", icon: <PoshtibaniIcone className="w-[20px] h-[20px]" /> }
      ]
 
 
@@ -36,7 +36,7 @@ export default function AdminNav (){
                                         {item.icon}
                                    </span>
                               
-                             <Link  href="/admin/dashboard" className="text-[#50545F]
+                             <Link  href={item.href} className="text-[#50545F]
                                flex items-center text-lg w-full
                               active:text-white rounded-[1rem] 
                               group-hover:bg-[#2D59C8] group-hover:text-white 

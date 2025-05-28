@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { AppRoutes } from "@/app/config/Routes";
 export default function AddProductForm() {
     return (
         <div className="w-full flex flex-col rounded-lg bg-white border-[1.5px] border-gray-200 my-5 gap-4">
@@ -56,7 +56,7 @@ export default function AddProductForm() {
                 
             </form> 
             <div className="flex justify-end p-4">
-            <Link href={"/admin/add-product/detaild-info"} 
+            <Link href={AppRoutes.ADD_BOOK_PRODUCT_DETAILD_INFO} 
             className="bg-[#FFFFFF] text-[#366CDA]
                 text-[14px] border-[1.5px] border-[#366CDA] 
                 hover:bg-[#366CDA] hover:text-white transition duration-300 ease-in-out flex items-center

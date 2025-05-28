@@ -3,6 +3,7 @@ import Progress from "@/app/(auth)/admin/components/Progress";
 import BackButton from "@/public/icons/back.svg"
 import DetaildInfoAddProductForm from "@/app/(auth)/admin/components/detailInfoAddProductForm";
 import DragAndDropInput from "../../components/drag&dropInput";
+import { AppRoutes } from "@/app/config/Routes";
 export default function DetaildInfoAddProduct(){
     return(
        <>
@@ -54,7 +55,7 @@ export default function DetaildInfoAddProduct(){
             </div>
 
                   <div className="flex justify-end p-4">
-            <Link href={"/admin/add-product/additional-info"} 
+            <Link href={AppRoutes.ADD_BOOK_PRODUCT_ADDITIONAL_INFO} 
             className="bg-[#FFFFFF] text-[#366CDA]
                 text-[14px] border-[1.5px] border-[#366CDA] 
                 hover:bg-[#366CDA] hover:text-white transition duration-300 ease-in-out flex items-center
