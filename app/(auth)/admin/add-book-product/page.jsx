@@ -2,7 +2,7 @@ import Progress from "../components/Progress";
 import BackButton from "@/public/icons/back.svg"
 import Link from "next/link";
 import AddProductForm from "../components/addProductForm";
-
+import { AppRoutes } from "@/app/config/Routes";
 export default function AddProductPage() {
     return(
         <>
@@ -15,7 +15,7 @@ export default function AddProductPage() {
         <div className="w-full m-2 p-3 ">
             <Progress active={1} steps={[' محصول', ' اطلاعات جزیی', ' اطلاعات تکمیلی', 'عکس و فیلم']} />
         </div>
-         <AddProductForm />
+         <AddProductForm href={AppRoutes.ADD_BOOK_PRODUCT_DETAILD_INFO} />
          </>
     
     )

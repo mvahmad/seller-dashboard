@@ -18,7 +18,7 @@ export default function DetaildInfoAddProduct(){
         </div>
         <div className='w-full flex flex-col rounded-lg bg-white border-[1.5px] border-gray-200 my-5 gap-4'>
             <div className="text-[#243464] p-2 font-bold">اطلاعات  محصول جدید را وارد کنید</div>
-            <DetaildInfoAddProductForm />
+            <DetaildInfoAddProductForm className1={"w-full"} className2={"w-full"} />
             <div className="flex justify-start px-3 flex-col">
                 <div className="text-[#243464] p-2 font-bold">
                     رده کتاب
