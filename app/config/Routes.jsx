@@ -16,9 +16,9 @@ export const AppRoutes = {
   ADD_VIDEOBOOK_PRODUCT_DETAILD_INFO: `/admin/add-videobook-product/detaild-info`,
   ADD_VIDEOBOOK_PRODUCT_MEDIA: `/admin/add-videobook-product/product-media`,
   ADD_MAGAZINE_PRODUCT: `/admin/add-magazine-product`,
-  ADD_MAGAZINE_PRODUCT_ADDITIONAL_INFO: `/admin/add-magazinebook-product/additional-info`,
-  ADD_MAGAZINE_PRODUCT_DETAILD_INFO: `/admin/add-magazinebook-product/detaild-info`,
-  ADD_MAGAZINE_PRODUCT_MEDIA: `/admin/add-magazinebook-product/product-media`,
+  ADD_MAGAZINE_PRODUCT_ADDITIONAL_INFO: `/admin/add-magazine-product/additional-info`,
+  ADD_MAGAZINE_PRODUCT_DETAILD_INFO: `/admin/add-magazine-product/detaild-info`,
+  ADD_MAGAZINE_PRODUCT_MEDIA: `/admin/add-magazine-product/product-media`,
 };
 
 export const PublicRoutes = [AppRoutes.LOGIN, AppRoutes.REGISTER];
