@@ -23,6 +23,10 @@ export const AppRoutes = {
   ADD_EBOOK_PRODUCT_ADDITIONAL_INFO: `/admin/add-ebook-product/additional-info`,
   ADD_EBOOK_PRODUCT_DETAILD_INFO: `/admin/add-ebook-product/detaild-info`,
   ADD_EBOOK_PRODUCT_MEDIA: `/admin/add-ebook-product/product-media`,
+  ADD_ARTICLE_PRODUCT: `/admin/add-article-product`,
+  ADD_ARTICLE_PRODUCT_ADDITIONAL_INFO: `/admin/add-article-product/additional-info`,
+  ADD_ARTICLE_PRODUCT_DETAILD_INFO: `/admin/add-article-product/detaild-info`,
+  ADD_ARTICLE_PRODUCT_MEDIA: `/admin/add-article-product/product-media`,
 
 };
 
