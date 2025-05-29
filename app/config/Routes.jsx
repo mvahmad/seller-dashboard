@@ -19,6 +19,11 @@ export const AppRoutes = {
   ADD_MAGAZINE_PRODUCT_ADDITIONAL_INFO: `/admin/add-magazine-product/additional-info`,
   ADD_MAGAZINE_PRODUCT_DETAILD_INFO: `/admin/add-magazine-product/detaild-info`,
   ADD_MAGAZINE_PRODUCT_MEDIA: `/admin/add-magazine-product/product-media`,
+  ADD_EBOOK_PRODUCT: `/admin/add-ebook-product`,
+  ADD_EBOOK_PRODUCT_ADDITIONAL_INFO: `/admin/add-ebook-product/additional-info`,
+  ADD_EBOOK_PRODUCT_DETAILD_INFO: `/admin/add-ebook-product/detaild-info`,
+  ADD_EBOOK_PRODUCT_MEDIA: `/admin/add-ebook-product/product-media`,
+
 };
 
 export const PublicRoutes = [AppRoutes.LOGIN, AppRoutes.REGISTER];
